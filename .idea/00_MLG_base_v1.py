@@ -32,7 +32,6 @@ def instructions():
     print()
 
 
-
 # Define a function to get the quiz difficulty level from the user
 def get_quiz_difficulty():
     # Prompt user to choose quiz difficulty level
