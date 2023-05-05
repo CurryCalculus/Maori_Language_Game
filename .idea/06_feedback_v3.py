@@ -1,4 +1,4 @@
-"""Component 4 (Answer Validation / Feedback) v2
+"""Component 4 (Answer Validation / Feedback) v3
 This component builds on from component 3.
 The user will receive a compliment if they get 10 questions right in row and the quiz will suggest you go back a level
 if you get more than 20 questions.
