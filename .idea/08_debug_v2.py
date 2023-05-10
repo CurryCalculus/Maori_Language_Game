@@ -23,6 +23,7 @@ months_maori = {
 consecutive_correct_answers = 0
 total_questions_answered = 0
 total_correct_answers = 0
+first_attempt = True
 
 while True:
     # choose a random month
@@ -48,7 +49,12 @@ while True:
             print("Well done! Keep up the hard work!")
         else:
             print("Correct!")
+        first_attempt = False
     else:
         consecutive_correct_answers = 0
         total_questions_answered += 1
-        print(f"Wrong. The correct answer is '{month}'.")
+        if first_attempt:
+            print("You haven’t attempted any questions yet. Please try answering a question first.")
+            first_attempt = False
+        else:
+            print(f"Wrong. The correct answer is '{month}'.")
