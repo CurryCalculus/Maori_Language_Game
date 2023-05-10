@@ -1,5 +1,5 @@
-"""MLG component v2
-I've added my functions however it doesn't work when I press 2 or 3 so I will change it in v3"""
+"""MLG component v3
+I saved v2 so I can copy it when I make a mistake on this version"""
 import random
 
 
