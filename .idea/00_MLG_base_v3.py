@@ -291,6 +291,9 @@ if played_before == "No":
     instructions()
 # Call the function to get the quiz difficulty level and store the result in a variable
 difficulty_level = get_quiz_difficulty()
+# Print a message indicating the user's chosen difficulty level
+print("You chose", difficulty_level, "difficulty.")
+
 if difficulty_level == "easy":
     maori_numbers_quiz()
 elif difficulty_level == "medium":
@@ -299,8 +302,6 @@ else:
     maori_quiz()
 
 
-# Print a message indicating the user's chosen difficulty level
-print("You chose", difficulty_level, "difficulty.")
 #
 # # Function that runs level 1
 # maori_numbers_quiz()
