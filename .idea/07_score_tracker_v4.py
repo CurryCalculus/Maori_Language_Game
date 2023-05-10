@@ -87,7 +87,9 @@ while True:
         # check if the user wants to stop
         if user_input == 'x':
             accuracy_percentage = (num_correct/num_attempted) * 100 if num_attempted > 0 else 0
-            print(f"Good job! You attempted {num_attempted} questions and got {num_correct} right, with an accuracy of {accuracy_percentage:.2f}%. Come back again after some rest!")
+            print(f"You attempted a total of {num_attempted} questions."
+                  f"\nYou got {num_correct} correct before pressing 'x'."
+                  f"\nYour accuracy percentage is {accuracy_percentage:.2f}%.")
             break
 
         num_attempted += 1
