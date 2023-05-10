@@ -1,6 +1,7 @@
 """MLG component
 Components added after they have been created and tested"""
 
+
 # yes/no checking function
 def yes_no(question_text):
     while True:
