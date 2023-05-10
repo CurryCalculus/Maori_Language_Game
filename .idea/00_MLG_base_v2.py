@@ -295,12 +295,12 @@ difficulty_level = get_quiz_difficulty()
 # Print a message indicating the user's chosen difficulty level
 print("You chose", difficulty_level, "difficulty.")
 
-# Call the function to run it. (level 1)
+# Function that runs level 1
 maori_numbers_quiz()
 
-# Call the function to run it. (level 2)
+# Function that runs level 2
 if __name__ == '__main__':
     maori_to_english()
 
-# Call the function to run it. (level 3)
+# Function that runs level 3
 maori_quiz()
