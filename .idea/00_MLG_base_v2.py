@@ -1,5 +1,8 @@
-"""MLG component
-Components added after they have been created and tested"""
+"""MLG component - based on MLG base component 1
+I made this version because I couldn't make my assembled code working.
+"""
+
+import random
 
 # yes/no checking function
 def yes_no(question_text):
