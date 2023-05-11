@@ -262,7 +262,17 @@ def maori_quiz():
                 print("Wrong! Try again later :)")
 
 
-# Main Routine go here...
+# Function to format text output
+def formatter(symbol, text):
+    sides = symbol * 3
+    formatted_text = f"{sides} {text} {sides}"
+    top_bottom = symbol * len(formatted_text)
+    return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
+
+
+# Main Routine
+print(formatter("-", "Maori Language Game"))
+print()
 played_before = yes_no("Have you played this quiz before? ")
 
 if played_before == "No":
@@ -280,6 +290,8 @@ elif difficulty_level == "medium":
     maori_to_english()
 else:
     maori_quiz()
+
+print(formatter("*", "Good job for completing today’s session! Do this daily and your Māori will improve!"))
 
 
 #
