@@ -49,7 +49,7 @@ def instructions():
     print("1. If you say 'x' or any alphabet as your first answer you will be told to enter an integer."
           "\n2. You will only know the correct answer for level 1 and 2. Level 3 is strict with the marking so please be careful.")
     print()
-    print("Enjoy the quiz and I hope you become more fimiliar with Maori numbers and months :) ")
+    print("Enjoy the quiz and I hope you become more familiar with Maori numbers and months :) ")
     print("*" * 50)
     print()
 
