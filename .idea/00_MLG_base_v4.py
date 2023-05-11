@@ -28,9 +28,29 @@ def yes_no(question_text):
 
 # function to display instructions
 def instructions():
-    print("***** How to Play *****")
     print()
-    print("The rules of the game will go here")
+    print(formatter("*", "how to Play"))
+    print()
+    print("This quiz is designed for students who want to"
+          "\nbecome fluent in translating Maori numbers from"
+          "\n1-10 and the monthsof the year to English.")
+    print()
+    print("1. Choose what level you want to do:"
+          "\n Level 1 = numbers"
+          "\n Level 2 = months of the year"
+          "\n Level 3 = mixture of both")
+    print()
+    print("2. Answer the questions. The quiz will run infinitely until you say 'x'."
+          "\n When you say 'x' the quiz will stop and you will know how many questions"
+          "\n you've attempted, how many you got it correct, and your accuracy percentage.")
+    print()
+    print("<Quick Notes>")
+    print()
+    print("1. If you say 'x' or any alphabet as your first answer you will be told to enter an integer."
+          "\n2. You will only know the correct answer for level 1 and 2. Level 3 is strict with the marking so please be careful.")
+    print()
+    print("Enjoy the quiz and I hope you become more fimiliar with Maori numbers and months :) ")
+    print("*" * 50)
     print()
 
 
