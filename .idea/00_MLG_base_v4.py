@@ -33,7 +33,7 @@ def instructions():
     print()
     print("This quiz is designed for students who want to"
           "\nbecome fluent in translating Maori numbers from"
-          "\n1-10 and the monthsof the year to English.")
+          "\n1-10 and the months of the year to English.")
     print()
     print("1. Choose what level you want to do:"
           "\n Level 1 = numbers"
