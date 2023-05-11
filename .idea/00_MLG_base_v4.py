@@ -156,7 +156,7 @@ def maori_to_english():
         else:
             consecutive_correct_answers = 0
             total_questions_answered += 1
-            if first_attempt:
+            if first_attempt == 'x':
                 print("You haven’t attempted any questions yet. Please try answering a question first.")
                 first_attempt = False
             else:
@@ -261,28 +261,6 @@ def maori_quiz():
                 num_wrong += 1
                 print("Wrong! Try again later :)")
 
-            # check if the user has answered 3 consecutive questions correctly
-        if consecutive_correct == 3:
-            consecutive_correct = 0
-            print("Congratulations! You've answered 3 consecutive questions correctly. You're now at the next level!")
-            if quiz_type == 'months':
-                # move to the next level of months quiz
-                months_maori.pop(month)
-                if len(months_maori) == 0:
-                    print("You've learned all the months in Maori!")
-                    break
-            else:
-                # move to the next level of numbers quiz
-                maori_numbers.pop(random_number)
-                if len(maori_numbers) == 0:
-                    print("You've learned all the numbers in Maori!")
-                    break
-
-        # print final results
-        accuracy_percentage = (num_correct / num_attempted) * 100 if num_attempted > 0 else 0
-        print(
-            f"You attempted a total of {num_attempted} questions.\nYou got {num_correct} correct.\nYour accuracy percentage is {accuracy_percentage:.2f}%.")
-
 
 # Main Routine go here...
 played_before = yes_no("Have you played this quiz before? ")
@@ -292,6 +270,10 @@ if played_before == "No":
 
 # Call the function to get the quiz difficulty level and store the result in a variable
 difficulty_level = get_quiz_difficulty()
+
+# Print a message indicating the user's chosen difficulty level
+print("You chose", difficulty_level, "difficulty.")
+
 if difficulty_level == "easy":
     maori_numbers_quiz()
 elif difficulty_level == "medium":
@@ -300,8 +282,6 @@ else:
     maori_quiz()
 
 
-# Print a message indicating the user's chosen difficulty level
-print("You chose", difficulty_level, "difficulty.")
 #
 # # Function that runs level 1
 # maori_numbers_quiz()
