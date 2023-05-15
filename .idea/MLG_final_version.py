@@ -1,5 +1,5 @@
-"""MLG Base Component
-Final version of the project "Maori Language Game"
+"""MLG component v4
+Making few changes from v3
 """
 import random
 
