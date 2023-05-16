@@ -73,6 +73,7 @@ def get_quiz_difficulty():
             difficulty = input("Invalid input. "
                                "\nPlease choose a whole number between 1-3: ")
 
+
 # Function for level 1
 def maori_numbers_quiz():
     maori_numbers = {
@@ -122,7 +123,7 @@ def maori_numbers_quiz():
     accuracy_percentage = round(num_correct_answers/num_questions_attempted * 100, 2)
     print(f"You attempted a total of {num_questions_attempted} questions.")
     print(f"You got {num_correct_answers} questions correct before pressing 'x'.")
-    print(f"Your accuracy percentage is {accuracy_percentage}%.")
+    print(f"Your accuracy percentage is {accuracy_percentage:.2f}%.")
 
 
 # Function for level 2
@@ -159,7 +160,7 @@ def maori_to_english():
             accuracy_percentage = (total_correct_answers / total_questions_answered) * 100
             print(f"You attempted a total of {total_questions_answered} questions. "
                   f"\nYou got {total_correct_answers} questions correct before pressing 'x'. "
-                  f"\nYour accuracy percentage is {accuracy_percentage}%.")
+                  f"\nYour accuracy percentage is {accuracy_percentage:.2f}%.")
             break
 
         # check if the user's answer is correct
@@ -302,7 +303,8 @@ difficulty_level = get_quiz_difficulty()
 
 # Print a message indicating the user's chosen difficulty level
 print("You chose", difficulty_level, "difficulty.")
-
+print()
+print('<Quiz>')
 if difficulty_level == "easy":
     maori_numbers_quiz()
 elif difficulty_level == "medium":
